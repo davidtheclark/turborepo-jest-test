@@ -1,13 +1,13 @@
-beforeAll(() => {
+beforeAll(async () => {
   console.log('beforeAll first');
 });
 
-afterAll(() => {
+afterAll(async () => {
   console.log('afterAll first');
 });
 
 describe('tests', () => {
-  test('log first', () => {
+  test('log first', async () => {
     console.log('test first');
     expect(true).toEqual(true);
   });
